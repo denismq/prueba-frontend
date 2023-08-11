@@ -1,0 +1,107 @@
+.section{
+    &--intro {
+        .c-ads{
+            &__header{
+                margin-bottom: 44px;
+                .headline__title {
+                    max-width: 358px;
+                }
+            }   
+            &__icono{
+                display: flex;
+                align-items: center;
+                margin-bottom: 14px;
+                span{
+                    margin-left: 16px;
+                    font-size: 24px;
+                    color: $white;
+                }
+            }
+            &__content{
+                padding: 13px 16px;
+                background-color: $white;
+            }
+            &__inner{
+                border-radius: 15px;
+                border: 2px dashed#003383;
+                padding: 18px 26px;
+                position: relative;
+                &::after{
+                    content: '';
+                    background-image: url('images/tijera.png');
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    right: -13px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            } 
+            &__title{
+                color: #DB0FA8;
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 12px;
+                &:after {
+                    content: '';
+                    background-image: url('images/linea-azul.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    max-width: 280px;
+                    height: 20px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            &__coupon{
+                display: flex;
+                margin-bottom: 23px;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: 480px){
+                    flex-direction: column;
+                }
+            }
+            &__coupon-image{
+
+            }
+            &__coupon-text{
+                font-size: 24px;
+                color: $blue;
+                font-weight: 600;
+                span.text-pink {
+                    color: #DB0FA8;
+                }
+            }
+            &__description{
+                text-align: center;
+                font-size: 14px;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.line-break{
+    display: block;
+}
+
+.bg-image {
+    position: relative;
+    &::after{
+        content: '';
+        background-image: url('images/linea.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 247px;
+        width: 100%;
+        height: 21px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        @media (max-width: 480px){
+            bottom: -17px;
+        }
+    }
+}
