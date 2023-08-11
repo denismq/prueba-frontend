@@ -1,11 +1,24 @@
 .c-form{
     max-width: 642px;
     background-color: $white;
+    padding: 24px 48px;
+    border-radius: 32px;
     &__title{
         font-family: 'Open Sans', sans;
         font-size: 24px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
+        color: $orange;
+        position: relative;
+        &:after {
+            content: '';
+            background-image: url('images/linea-azul.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 208px;
+            height: 15px;
+            display: block;
+        }
     }
 }

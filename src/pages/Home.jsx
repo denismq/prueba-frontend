@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from '../components/Input'
 
 const Home = () => {
   return (
@@ -42,6 +43,21 @@ const Home = () => {
                                 <h2 className="c-form__title">
                                     Completa tus datos
                                 </h2>
+                                <div className="c-form__inner">
+                                    <div className="c-form__form-row">
+                                    <Input
+                                        type='text'
+                                        label='UserName'
+                                        name='username'
+                                        className={`form-control ${
+                                        errors['username'] ? 'is-invalid' : ''
+                                        }`}
+                                        value={value}
+                                        onChange={onChange}
+                                        onBlur={onBlur}
+                                />                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
