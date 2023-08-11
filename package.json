@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.1",
+    "dart-sass": "^1.25.0",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "sass": "^1.65.1",
+    "swiper": "^10.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
