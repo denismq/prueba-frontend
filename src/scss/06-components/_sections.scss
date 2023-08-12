@@ -6,12 +6,14 @@
         .headline{
             margin-bottom: 52px;
             &__title{
-                //font-family: Open Sans;
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
                 color: #1A36A8;
+                @media (max-width: 768px){
+                    font-size: 24px;
+                }
                 &::after{
                     content: '';
                     background-image: url('images/linea-grande.png');
@@ -31,6 +33,9 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
+                @media (max-width: 768px){
+                    font-size: 20px;
+                }
             }
         }        
     }
@@ -121,36 +126,6 @@
     &--discount{
         background-color: $white;
         padding: 67px 0;
-        .headline{
-            margin-bottom: 52px;
-            &__title{
-                //font-family: Open Sans;
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                color: #1A36A8;
-                &::after{
-                    content: '';
-                    background-image: url('images/linea-grande.png');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    max-width: 280px;
-                    height: 20px;
-                    display: block;
-                    margin: 0 auto;   
-                }
-            }
-            &__description{
-                color: #595959;
-                text-align: center;
-                //font-family: Open Sans;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-            }
-        }
         .steps{
             display: flex;
             flex-direction: column;
@@ -158,11 +133,13 @@
             &__title{
                 margin-bottom: 18px;
                 color: #1A36A8;
-                //font-family: 'Open Sans';
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;                
+                @media (max-width: 768px){
+                    font-size: 22px;
+                }
             }
             &__circle{
                 width: 244px;
@@ -185,6 +162,7 @@
             }
             &__description{
                 text-align: center;
+                max-width: 362px;
                 h3{
                     //font-family: 'Open Sans';
                     font-size: 32px;
@@ -193,6 +171,9 @@
                     line-height: normal;
                     margin-bottom: 26px;
                     color: #1A36A8;
+                    @media (max-width: 768px){
+                        font-size: 22px;
+                    }
                 }
                 p{
                     color: #595959;
@@ -211,6 +192,9 @@
         @media (max-width: 1100px){
             padding-bottom: 67px;
         } 
+        .blue-icon{
+            margin: 30px auto 45px;
+        }
     }
 }
 

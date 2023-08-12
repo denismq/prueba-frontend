@@ -234,7 +234,12 @@ const Home = () => {
                                 <div className="ribbon__line"></div>
                             </div>
                         </div>
-                    </div>     
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <img src="images/logo-masuno-azul.png" alt="" className='blue-icon'/>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-md-12">
                             <header className="headline text-center">

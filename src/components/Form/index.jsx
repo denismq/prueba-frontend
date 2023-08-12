@@ -15,6 +15,11 @@ const emailPattern = {
     message: 'Ingrese un email valido',
 };
 
+const numberPattern = {
+    value: /^(0|[1-9]\d*)(\.\d+)?$/,
+    message: 'Solo numeros',
+};
+
 const defaultValues = {
     firstname: '',
     lastname: '',
@@ -31,13 +36,9 @@ const Form = () => {
     const [sentForm, setSentForm] = useState(false);
 
     const {
-        register,
         handleSubmit,
-        getValues,
-        setValue,
         control,
         reset,
-        setError,
         formState: { isSubmitting, errors, isSubmitSuccessful },
         } = useForm({
         defaultValues,
@@ -67,8 +68,6 @@ const Form = () => {
                             <p className='success-form__header'>¡Formulario enviado exitosamente!</p>
                             <p className='success-form__text'>Recibiras un correo electrónico donde podras ver el cupon de descuento.</p>
                         </div>
-                        
-
                     ) : (
                         <>
                         <h2 className="c-form__title">
@@ -142,6 +141,7 @@ const Form = () => {
                                         value: true,
                                         message: 'Ingrese telefono',
                                         },
+                                        pattern: numberPattern,
                                     }}
                                     render={({ field: { onChange, onBlur, value} }) => (
                                         <Input
