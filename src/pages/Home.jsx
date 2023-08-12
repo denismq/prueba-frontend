@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from '../components/Input'
 import Form from '../components/Form'
+import SliderTech from '../components/Slider-technology'
 
 const Home = () => {
   return (
@@ -123,7 +124,27 @@ const Home = () => {
             </div>
         </section>
         <section className='section section--technology'>
-            <div className="o-container"></div>
+            <div className="o-container">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="ribbon">
+                                <div className="ribbon__line"></div>
+                                <div className="ribbon__image"></div>
+                                <div className="ribbon__line"></div>
+                            </div>
+                        </div>
+                    </div>     
+                    <div className="row">
+                        <div className="col-md-12">
+                            <header className="headline text-center">
+                                <h1 className="headline__title">Las mejores tecnologias de Más uno</h1>
+                            </header>
+                        </div>                    
+                    </div>               
+                </div>
+            </div>
+            <SliderTech />
         </section>
         
     </>

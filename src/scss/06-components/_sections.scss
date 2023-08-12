@@ -1,4 +1,39 @@
 .section{
+    &--discount,
+    &--technology{
+        background-color: $white;
+        padding: 67px 0;
+        .headline{
+            margin-bottom: 52px;
+            &__title{
+                font-family: Open Sans;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: #1A36A8;
+                &::after{
+                    content: '';
+                    background-image: url('images/linea-grande.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    max-width: 280px;
+                    height: 20px;
+                    display: block;
+                    margin: 0 auto;   
+                }
+            }
+            &__description{
+                color: #595959;
+                text-align: center;
+                font-family: Open Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }        
+    }
     &--intro {
         .c-ads{
             &__header{
@@ -167,6 +202,12 @@
             }
 
         }
+    }
+    &--technology{
+        padding-bottom: 0;
+        @media (max-width: 1100px){
+            padding-bottom: 67px;
+        } 
     }
 }
 
