@@ -1,7 +1,4 @@
 .section{
-    &--intro{
-        padding-top: 160px;
-    }
     &--discount,
     &--technology{
         background-color: $white;
@@ -9,7 +6,7 @@
         .headline{
             margin-bottom: 52px;
             &__title{
-                font-family: Open Sans;
+                //font-family: Open Sans;
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
@@ -29,7 +26,7 @@
             &__description{
                 color: #595959;
                 text-align: center;
-                font-family: Open Sans;
+                //font-family: Open Sans;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
@@ -38,7 +35,10 @@
         }        
     }
     &--intro {
+        padding-top: 160px;
+        padding-bottom: 77px;
         .c-ads{
+            max-width: 550px;
             &__header{
                 margin-bottom: 44px;
                 .headline__title {
@@ -124,7 +124,7 @@
         .headline{
             margin-bottom: 52px;
             &__title{
-                font-family: Open Sans;
+                //font-family: Open Sans;
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
@@ -144,7 +144,7 @@
             &__description{
                 color: #595959;
                 text-align: center;
-                font-family: Open Sans;
+                //font-family: Open Sans;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
@@ -158,7 +158,7 @@
             &__title{
                 margin-bottom: 18px;
                 color: #1A36A8;
-                font-family: 'Open Sans';
+                //font-family: 'Open Sans';
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 700;
@@ -186,7 +186,7 @@
             &__description{
                 text-align: center;
                 h3{
-                    font-family: 'Open Sans';
+                    //font-family: 'Open Sans';
                     font-size: 32px;
                     font-style: normal;
                     font-weight: 700;
@@ -196,7 +196,7 @@
                 }
                 p{
                     color: #595959;
-                    font-family: Open Sans;
+                    //font-family: Open Sans;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;

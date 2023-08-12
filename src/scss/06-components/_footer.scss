@@ -13,7 +13,7 @@
     }
     &__text{
         p{
-            font-family: Open Sans;
+            //font-family: Open Sans;
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
@@ -28,7 +28,7 @@
             margin-bottom: 14px;
         }   
         a{
-            font-family: Open Sans;
+            //font-family: Open Sans;
             font-size: 16px;
             font-style: normal;
             font-weight: 300;
@@ -52,7 +52,7 @@
         }
         span{
             color: $white;
-            font-family: Open Sans;
+            //font-family: Open Sans;
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
@@ -62,7 +62,6 @@
 }
 
 .copyright {
-    font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;

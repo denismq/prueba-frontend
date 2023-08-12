@@ -10,15 +10,12 @@ const SliderTech = () => {
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={1}
-            //breakpoints={sliderSettings}
-            //loop={true}
             navigation={{
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
             }}
             //navigation
             pagination={{ el: '.c-slider__custom-pagination', clickable: true }}
-            //scrollbar={{ draggable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             >
@@ -57,7 +54,7 @@ const SliderTech = () => {
                             </Link>                            
                         </div>
                         <div className="c-slider__image">
-                            <img src="images/tecnologia-1.jpg" alt="" />
+                            <img src="images/tecnologia-2.jpg" alt="" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -76,7 +73,7 @@ const SliderTech = () => {
                             </Link>                            
                         </div>
                         <div className="c-slider__image">
-                            <img src="images/tecnologia-1.jpg" alt="" />
+                            <img src="images/tecnologia-3.jpg" alt="" />
                         </div>
                     </div>
                 </SwiperSlide>

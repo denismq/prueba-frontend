@@ -3,14 +3,17 @@
     background-color: $white;
     padding: 24px 48px;
     border-radius: 32px;
+    margin-top: 80px;
+    position: relative;
     &__title{
-        font-family: 'Open Sans', sans;
+        //font-family: 'Open Sans', sans;
         font-size: 24px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
         color: $orange;
         position: relative;
+        margin-bottom: 35px;
         &:after {
             content: '';
             background-image: url('images/linea-azul.png');
@@ -25,7 +28,7 @@
         margin-bottom: 13px;
         label{
             color: $gray;
-            font-family: 'Open Sans';
+            //font-family: 'Open Sans';
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
@@ -34,7 +37,7 @@
         }
         .form-control{
             border-radius: 6px;
-            border: 1px solid $gray;
+            //border: 1px solid $gray;
             padding: 8px 16px;
         }
         select{
@@ -47,7 +50,7 @@
             align-items: center;
         }
         .note{
-            font-family: 'Open Sans';
+            //font-family: 'Open Sans';
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -57,4 +60,22 @@
         }
     }
 
+}
+
+.success-form {
+    color: $orange;
+    font-size: 25px;
+    padding: 80px 0;
+    text-align: center;
+    &__header{
+        margin-bottom: 40px;
+    }
+    &__text{
+        color: #003383;
+        font-size: 18px;
+    }
+}
+
+.margin-bottom {
+    margin-bottom: 70px;
 }
