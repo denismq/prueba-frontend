@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from '../components/Input'
+import Form from '../components/Form'
 
 const Home = () => {
   return (
@@ -39,26 +40,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="c-form">
-                                <h2 className="c-form__title">
-                                    Completa tus datos
-                                </h2>
-                                <div className="c-form__inner">
-                                    <div className="c-form__form-row">
-                                    <Input
-                                        type='text'
-                                        label='UserName'
-                                        name='username'
-                                        className={`form-control ${
-                                        errors['username'] ? 'is-invalid' : ''
-                                        }`}
-                                        value={value}
-                                        onChange={onChange}
-                                        onBlur={onBlur}
-                                />                                        
-                                    </div>
-                                </div>
-                            </div>
+                            <Form />
                         </div>
                     </div>
                 </div>

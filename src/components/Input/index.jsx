@@ -17,7 +17,7 @@ const Input = ({
   };
 
   return (
-    <div>
+    <>
       {label && <label>{label}</label>}
       <input
         type={type}
@@ -30,7 +30,7 @@ const Input = ({
         className={className}
         {...props}
       />
-    </div>
+    </>
   );
 };
 

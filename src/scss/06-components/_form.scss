@@ -21,4 +21,40 @@
             display: block;
         }
     }
+    &__row {
+        margin-bottom: 13px;
+        label{
+            color: $gray;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            display: block;       
+        }
+        .form-control{
+            border-radius: 6px;
+            border: 1px solid $gray;
+            padding: 8px 16px;
+        }
+        select{
+            background-image: url('images/arrow.png');
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        .c-control{
+            display: flex;
+            align-items: center;
+        }
+        .note{
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; 
+            color: #595959;
+            text-align: center;
+        }
+    }
+
 }
