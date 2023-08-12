@@ -59,7 +59,21 @@
             text-align: center;
         }
     }
+    &__image{
+        background-image: url('images/cyberdays-logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 129px;
+        height: 129px;
+        position: absolute;
+        top: -40px;
+        right: -15px;
+        @media (max-width: 480px){
+            width: 90px;
+            height: 90px;
+        }
 
+    }
 }
 
 .success-form {
