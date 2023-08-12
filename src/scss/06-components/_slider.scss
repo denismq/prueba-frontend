@@ -65,6 +65,9 @@
         right: 32px;
         &:hover{
             color: $white;
+            @media (max-width: 1100px){
+                color: $gray;
+            } 
         }
     }
     .swiper-button-prev, .swiper-button-next{
@@ -90,10 +93,23 @@
                 bottom: initial;
                 left: initial;
                 transform: none;
+                text-align: center;
+                padding-left: 0;
             } 
         }
         @media (max-width: 1100px){
             position: relative;
         }   
+    }
+    &--discount{
+
+        .swiper-button-prev, .swiper-button-next{
+            color: $blue;
+        }    
+        .swiper-button-next{
+            &:hover{
+                color: $blue;
+            }
+        }    
     }
 }

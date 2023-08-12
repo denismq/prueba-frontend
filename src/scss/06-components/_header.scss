@@ -7,6 +7,9 @@
     height: 117px;
     display: flex;
     align-items: center;
+    position: fixed;
+    background-color: $bg-color;
+    z-index: 200;
     &__inner{
         display: flex;
         justify-content: center;

@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Input from '../components/Input'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Form from '../components/Form'
 import SliderTech from '../components/Slider-technology'
 
+
 const Home = () => {
+    const [showSlider, setShowSlider] = useState()
+    useEffect(() => {
+  
+        const handleResize = () => {
+         //console.log('resize')
+         const mediaQuery = window.matchMedia("(max-width: 767px)").matches;
+         if (mediaQuery) {
+            console.log('crear slider')
+            setShowSlider(true);
+         }else {
+            setShowSlider(false);
+         }
+        }
+        
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+         window.removeEventListener('resize', handleResize);
+        };
+        
+      }, []);
+
+
   return (
     <>
         <section className='section section--intro'>
@@ -66,7 +92,80 @@ const Home = () => {
                                 <p className="headline__description">Para adquirir nuestro descuento especial por <span className='text-orange'>Cyber Days</span> sigue los siguientes pasos</p>
                             </header>
                         </div>
-                        <div className="col-md-12">
+                        {showSlider ? (
+                            <div className="c-slider c-slider--discount">
+                                <Swiper
+                                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                    spaceBetween={50}
+                                    slidesPerView={1}
+                                    navigation={{
+                                        prevEl: '.swiper-button-prev',
+                                        nextEl: '.swiper-button-next',
+                                    }}
+                                    //pagination={{ el: '.c-slider__custom-pagination', clickable: true }}
+                                    onSlideChange={() => console.log('slide change')}
+                                    onSwiper={(swiper) => console.log(swiper)}
+                                    >
+                                        <SwiperSlide>
+                                            <div className="c-slider__item">
+                                                <div className="steps">
+                                                    <h2 className="steps__title">Paso 1</h2>
+                                                    <div className="steps__circle">
+                                                        <div className="steps__circle-inner">
+                                                            <div className="steps__circle-image">
+                                                                <img src="images/icono-paso-1.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="steps__description">
+                                                        <h3>Registrate</h3>
+                                                        <p>Completa el formulario con tus datos personales y acepta los términos</p>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="c-slider__item">
+                                                <div className="steps">
+                                                    <h2 className="steps__title">Paso 2</h2>
+                                                    <div className="steps__circle">
+                                                        <div className="steps__circle-inner">
+                                                            <div className="steps__circle-image">
+                                                                <img src="images/icono-paso-2.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="steps__description">
+                                                        <h3>Recibe un cupón</h3>
+                                                        <p>Recibiras un correo electrónico donde podras ver el cupon de descuento.</p>
+                                                    </div>
+                                                </div>                                            
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="c-slider__item">
+                                                <div className="steps">
+                                                    <h2 className="steps__title">Paso 3</h2>
+                                                    <div className="steps__circle">
+                                                        <div className="steps__circle-inner">
+                                                            <div className="steps__circle-image">
+                                                                <img src="images/icono-paso-3.png" alt="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="steps__description">
+                                                        <h3>Empieza a ahorrar</h3>
+                                                        <p>¡Y listo! Podrás usarlo del 28 al 30 de Marzo por compras en nuestra tienda online.</p>
+                                                    </div>
+                                                </div>                                            
+                                            </div>
+                                        </SwiperSlide>
+                                </Swiper>
+                                <div className="swiper-button-prev"></div>
+                                <div className="swiper-button-next"></div>                            
+                            </div>
+                        ): (
+                            <div className="col-md-12">
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="steps">
@@ -118,7 +217,8 @@ const Home = () => {
                                 </div>
                                 
                             </div>
-                        </div>
+                        </div>                            
+                        )}
                     </div>
                 </div>
             </div>
