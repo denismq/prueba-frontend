@@ -47,7 +47,80 @@ const Home = () => {
             </div>
         </section>
         <section className='section section--discount'>
-            <div className="o-container"></div>
+            <div className="o-container">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="ribbon">
+                                <div className="ribbon__line"></div>
+                                <div className="ribbon__image"></div>
+                                <div className="ribbon__line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <header className="headline text-center">
+                                <h1 className="headline__title">¿Como obtengo el descuento por Cyber Days?</h1>
+                                <p className="headline__description">Para adquirir nuestro descuento especial por <span className='text-orange'>Cyber Days</span> sigue los siguientes pasos</p>
+                            </header>
+                        </div>
+                        <div className="col-md-12">
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <div className="steps">
+                                        <h2 className="steps__title">Paso 1</h2>
+                                        <div className="steps__circle">
+                                            <div className="steps__circle-inner">
+                                                <div className="steps__circle-image">
+                                                    <img src="images/icono-paso-1.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="steps__description">
+                                            <h3>Registrate</h3>
+                                            <p>Completa el formulario con tus datos personales y acepta los términos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="steps">
+                                        <h2 className="steps__title">Paso 2</h2>
+                                        <div className="steps__circle">
+                                            <div className="steps__circle-inner">
+                                                <div className="steps__circle-image">
+                                                    <img src="images/icono-paso-2.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="steps__description">
+                                            <h3>Recibe un cupón</h3>
+                                            <p>Recibiras un correo electrónico donde podras ver el cupon de descuento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="steps">
+                                        <h2 className="steps__title">Paso 3</h2>
+                                        <div className="steps__circle">
+                                            <div className="steps__circle-inner">
+                                                <div className="steps__circle-image">
+                                                    <img src="images/icono-paso-3.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="steps__description">
+                                            <h3>Empieza a ahorrar</h3>
+                                            <p>¡Y listo! Podrás usarlo del 28 al 30 de Marzo por compras en nuestra tienda online.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section className='section section--technology'>
             <div className="o-container"></div>
