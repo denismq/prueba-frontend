@@ -199,7 +199,7 @@ const Form = () => {
                     />
                     {errors['favorites'] && <Error>{errors['favorites']?.message}</Error>}
                 </div>
-                <div className="c-form__row">
+                <div className="c-form__row c-form__row--full-width">
                     <Controller
                         name="terms"
                         control={control}
@@ -247,12 +247,12 @@ const Form = () => {
                     />
                     {errors['personal'] && <Error>{errors['personal']?.message}</Error>}                                              
                 </div>
-                <div className="c-form__row text-center">
+                <div className="c-form__row c-form__row--full-width text-center">
                     <button type='submit' className='c-button' disabled={isSubmitting}>
                         Registrarme
                     </button>
                 </div>
-                <div className="c-form__row">
+                <div className="c-form__row c-form__row--full-width">
                     <p className="note">
                         Aprovecha las mejores ofertas y descuentos en cerdo, congelados, embutidos
                         y mucho más. No te pierdas de nada estos Cyberdays registrándote y obteniendo grandes descuentos exclusivos.

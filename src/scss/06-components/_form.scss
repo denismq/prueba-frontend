@@ -58,6 +58,9 @@
             color: #595959;
             text-align: center;
         }
+        &--full-width {
+            grid-column: 1 / 3;
+        }
     }
     &__image{
         background-image: url('images/cyberdays-logo.png');
